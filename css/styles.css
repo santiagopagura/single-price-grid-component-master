@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: hsl(204, 43%, 93%);
+}
+
+main {
+  margin: 24px;
+}
+main section {
+  padding: 24px;
+}
+
+.first {
+  grid-area: first;
+  background-color: white;
+}
+.first h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.first h2 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.first p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.5;
+}
+
+.second {
+  grid-area: second;
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(179, 61%, 41%);
+}
+.second h2 {
+  font-size: 16px;
+}
+.second div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.second div .big {
+  font-size: 28px;
+  margin-right: 18px;
+}
+
+button {
+  margin-top: 37px;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  width: 100%;
+  border-style: none;
+  height: 48px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 12px hsla(0, 0%, 0%, 0.3);
+}
+
+.third {
+  grid-area: third;
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(179, 62%, 43%);
+  line-height: 1.3;
+}
+.third h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-areas: "first first" "second third";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 12.5% 31%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
